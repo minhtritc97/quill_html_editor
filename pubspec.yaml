@@ -20,7 +20,7 @@ dependencies:
   ##### For webveiwx widget
   http: ^1.2.1
   path: ^1.9.0
-  pointer_interceptor: ^0.10.1
+  pointer_interceptor: ^0.10.1+2
   uuid: ^4.3.3
   webview_flutter: ^4.4.4
   webview_flutter_android: ^3.13.2
@@ -31,6 +31,14 @@ dev_dependencies:
   flutter_lints: ^2.0.0
 
 flutter:
+  plugin:
+    platforms:
+      android:
+        default_package: quill_html_editor
+      ios:
+        default_package: quill_html_editor
+      web:
+        default_package: quill_html_editor
   assets:
       - packages/quill_html_editor/assets/camera_roll_icon.png
       - packages/quill_html_editor/assets/h1_dark.png
